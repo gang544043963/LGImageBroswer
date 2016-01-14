@@ -12,7 +12,15 @@
 		4425620D1C45E80200B05C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4425620B1C45E80200B05C19 /* Main.storyboard */; };
 		4425620F1C45E80200B05C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4425620E1C45E80200B05C19 /* Assets.xcassets */; };
 		442562121C45E80200B05C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442562101C45E80200B05C19 /* LaunchScreen.storyboard */; };
-		4425621B1C45E8A000B05C19 /* LGImageBroswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425621A1C45E8A000B05C19 /* LGImageBroswer.swift */; };
+		4447FDBA1C45F407006BA4AD /* LGImageBroswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447FDB91C45F407006BA4AD /* LGImageBroswer.swift */; };
+		4447FDBC1C45F469006BA4AD /* LGPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447FDBB1C45F469006BA4AD /* LGPicture.swift */; };
+		4447FDC31C461E1F006BA4AD /* broswerPic0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDBD1C461E1F006BA4AD /* broswerPic0.jpg */; };
+		4447FDC41C461E1F006BA4AD /* broswerPic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDBE1C461E1F006BA4AD /* broswerPic2.jpg */; };
+		4447FDC51C461E1F006BA4AD /* broswerPic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDBF1C461E1F006BA4AD /* broswerPic3.jpg */; };
+		4447FDC61C461E1F006BA4AD /* broswerPic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDC01C461E1F006BA4AD /* broswerPic4.jpg */; };
+		4447FDCF1C461EFC006BA4AD /* broswerPic5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDCC1C461EFC006BA4AD /* broswerPic5.jpg */; };
+		4447FDD01C461EFC006BA4AD /* broswerPic6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDCD1C461EFC006BA4AD /* broswerPic6.jpg */; };
+		4447FDD11C461EFC006BA4AD /* broswerPic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4447FDCE1C461EFC006BA4AD /* broswerPic1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +31,15 @@
 		4425620E1C45E80200B05C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442562111C45E80200B05C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442562131C45E80200B05C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4425621A1C45E8A000B05C19 /* LGImageBroswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGImageBroswer.swift; sourceTree = "<group>"; };
+		4447FDB91C45F407006BA4AD /* LGImageBroswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGImageBroswer.swift; sourceTree = "<group>"; };
+		4447FDBB1C45F469006BA4AD /* LGPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGPicture.swift; sourceTree = "<group>"; };
+		4447FDBD1C461E1F006BA4AD /* broswerPic0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broswerPic0.jpg; path = ../broswerPic0.jpg; sourceTree = "<group>"; };
+		4447FDBE1C461E1F006BA4AD /* broswerPic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broswerPic2.jpg; path = ../broswerPic2.jpg; sourceTree = "<group>"; };
+		4447FDBF1C461E1F006BA4AD /* broswerPic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broswerPic3.jpg; path = ../broswerPic3.jpg; sourceTree = "<group>"; };
+		4447FDC01C461E1F006BA4AD /* broswerPic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = broswerPic4.jpg; path = ../broswerPic4.jpg; sourceTree = "<group>"; };
+		4447FDCC1C461EFC006BA4AD /* broswerPic5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic5.jpg; sourceTree = "<group>"; };
+		4447FDCD1C461EFC006BA4AD /* broswerPic6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic6.jpg; sourceTree = "<group>"; };
+		4447FDCE1C461EFC006BA4AD /* broswerPic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		442562061C45E80200B05C19 /* LGImageBroswer */ = {
 			isa = PBXGroup;
 			children = (
+				4447FDC91C461E49006BA4AD /* image */,
 				442562191C45E87700B05C19 /* Class */,
 				442562071C45E80200B05C19 /* AppDelegate.swift */,
 				442562091C45E80200B05C19 /* ViewController.swift */,
@@ -70,8 +87,24 @@
 		442562191C45E87700B05C19 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				4425621A1C45E8A000B05C19 /* LGImageBroswer.swift */,
+				4447FDB91C45F407006BA4AD /* LGImageBroswer.swift */,
+				4447FDBB1C45F469006BA4AD /* LGPicture.swift */,
 			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		4447FDC91C461E49006BA4AD /* image */ = {
+			isa = PBXGroup;
+			children = (
+				4447FDBD1C461E1F006BA4AD /* broswerPic0.jpg */,
+				4447FDBE1C461E1F006BA4AD /* broswerPic2.jpg */,
+				4447FDBF1C461E1F006BA4AD /* broswerPic3.jpg */,
+				4447FDC01C461E1F006BA4AD /* broswerPic4.jpg */,
+				4447FDCC1C461EFC006BA4AD /* broswerPic5.jpg */,
+				4447FDCD1C461EFC006BA4AD /* broswerPic6.jpg */,
+				4447FDCE1C461EFC006BA4AD /* broswerPic1.jpg */,
+			);
+			name = image;
 			path = Class;
 			sourceTree = "<group>";
 		};
@@ -136,7 +169,14 @@
 			files = (
 				442562121C45E80200B05C19 /* LaunchScreen.storyboard in Resources */,
 				4425620F1C45E80200B05C19 /* Assets.xcassets in Resources */,
+				4447FDC31C461E1F006BA4AD /* broswerPic0.jpg in Resources */,
+				4447FDD01C461EFC006BA4AD /* broswerPic6.jpg in Resources */,
+				4447FDCF1C461EFC006BA4AD /* broswerPic5.jpg in Resources */,
+				4447FDC51C461E1F006BA4AD /* broswerPic3.jpg in Resources */,
 				4425620D1C45E80200B05C19 /* Main.storyboard in Resources */,
+				4447FDC61C461E1F006BA4AD /* broswerPic4.jpg in Resources */,
+				4447FDC41C461E1F006BA4AD /* broswerPic2.jpg in Resources */,
+				4447FDD11C461EFC006BA4AD /* broswerPic1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4425620A1C45E80200B05C19 /* ViewController.swift in Sources */,
+				4447FDBC1C45F469006BA4AD /* LGPicture.swift in Sources */,
+				4447FDBA1C45F407006BA4AD /* LGImageBroswer.swift in Sources */,
 				442562081C45E80200B05C19 /* AppDelegate.swift in Sources */,
-				4425621B1C45E8A000B05C19 /* LGImageBroswer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +338,7 @@
 				442562181C45E80200B05C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

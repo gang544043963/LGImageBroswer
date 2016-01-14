@@ -10,18 +10,41 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
+
 class LGImageBroswer: UICollectionViewController {
+    
+    
+    var picturesArray = [UIImage]()
+    let paddingY:CGFloat = 10
+    var currentPageIndex = 0
+    
+    init(){
+        let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width,UIScreen.mainScreen().bounds.height)
+        
+//        let paddingX:CGFloat = 10
+        layout.minimumLineSpacing = paddingY
+        layout.scrollDirection = .Horizontal
+        super.init(collectionViewLayout: layout)
+    }
+    
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.collectionView?.frame = CGRectMake(0, 0, self.view.frame.width + paddingY, self.view.frame.height)
+        self.collectionView?.bounces = true
+        self.collectionView?.pagingEnabled = true        // Do any additional setup after loading the view.
+        self.collectionView!.contentSize = CGSizeMake(self.collectionView!.frame.width * CGFloat(self.picturesArray.count) + 10, 0)
+        let www = CGFloat(self.currentPageIndex)
+        self.collectionView?.contentOffset = CGPointMake((self.collectionView?.frame.width)! * www
+, 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,66 +52,34 @@ class LGImageBroswer: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return self.picturesArray.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
     
         // Configure the cell
-    
+        cell.backgroundColor = UIColor.blackColor()
+        cell.backgroundView = UIImageView(image: self.picturesArray[indexPath.item] as UIImage)
+        cell.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
         return cell
     }
 
     // MARK: UICollectionViewDelegate
 
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
     }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
-
 }
